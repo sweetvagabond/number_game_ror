@@ -1,0 +1,9 @@
+<h1>Welcome to the Great Number Game</h1>
+<p>I am thinking of a number between 1 and 100</p>
+<p>Take a guess!</p>
+<form action="answer" method="post">
+	<input type="hidden" value="<%= form_authenticity_token %>" name="authenticity_token"/> 
+	<input type="text" name="number">
+	<input type="submit" name="Guess">
+</form>
+<p><%= @message %></p>
